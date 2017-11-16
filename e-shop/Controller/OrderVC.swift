@@ -12,7 +12,7 @@ import Stripe
 
 class OrderVC: UIViewController {
 
-    
+    let stripManager = StripPay()
     let merchantID = "merchant.com.weza.e-shop"
     let supportedPaymentNertwork :[ PKPaymentNetwork ] = [.visa,.amex,.masterCard]
     let manager = ApplePay()
@@ -64,17 +64,25 @@ class OrderVC: UIViewController {
 }
 
 extension OrderVC : PKPaymentAuthorizationViewControllerDelegate {
+    
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
         controller.dismiss(animated: true, completion: nil)
     }
     
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
-        self.stripconf(payment: payment) { error in
-            if (error != nil) {
-                completion(PKPaymentAuthorizationStatus.failure)
-            } else {
-                completion(PKPaymentAuthorizationStatus.success)
+        stripManager.createSTPToken(forPayment: payment) { (token, error) in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
             }
+            guard let tokenF = token else {return}
+            self.stripManager.makeFinalPayment(token: tokenF, price: self.manager.effectivePrice!, completion: { error in
+                guard error == nil else {
+                    self.Alert(title: "Failed!", message: "payment Failed")
+                    return
+                }
+                
+            })
         }
     }
     
@@ -87,39 +95,5 @@ extension OrderVC : PKPaymentAuthorizationViewControllerDelegate {
         
     }
    
-    func stripconf(payment : PKPayment, completion : @escaping (Error?)->()){
-        Stripe.setDefaultPublishableKey(publisableKey)
-        STPAPIClient.shared().createToken(with: payment) { (token, error) in
-            guard error == nil else {
-                print(error?.localizedDescription)
-                return
-            }
-            
-            let contact = payment.shippingContact
-            let url = NSURL(string: "http://0.0.0.0:5000/pay")  // Replace with computers local IP Address!
-            let request = NSMutableURLRequest(url: url! as URL)
-            request.httpMethod = "POST"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.setValue("application/json", forHTTPHeaderField: "Accept")
-            
-            //2
-            let body = ["stripeToken": token?.tokenId,
-                        "amount":self.manager.effectivePrice! * 100.0,
-                        "description": "buy using e-shop",
-                        "shipping": [
-                            "city": "shippingAddress.City!",
-                            "state": "shippingAddress.State!",
-                            "zip": "shippingAddress.Zip!",
-                            "firstName": "shippingAddress.FirstName!",
-                            "lastName": "shippingAddress.LastName!"] ] as [String : Any]
-            
-            var error: NSError?
-            try! request.httpBody = JSONSerialization.data(withJSONObject: body, options: JSONSerialization.WritingOptions())
-            //3
-            NSURLConnection.sendAsynchronousRequest(request as URLRequest, queue: OperationQueue.main) { (response, data, error) -> Void in
-                completion(error)
-            }
-            
-        }
-    }
+    
 }

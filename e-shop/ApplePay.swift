@@ -10,6 +10,7 @@ import Foundation
 import PassKit
 let publisableKey = "pk_test_SrHU35nCqiToGG5R5zfOQKx6"
 let secrete = "sk_test_4HKKLEaGa6YweA50gknGDYEf"
+
 class ApplePay{
     let merchantID = "merchant.com.weza.e-shop"
     let supportedPaymentNertwork :[ PKPaymentNetwork ] = [.visa,.amex,.masterCard]

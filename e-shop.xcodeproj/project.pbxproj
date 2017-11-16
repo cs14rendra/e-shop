@@ -28,6 +28,15 @@
 		ED667CD51FBB065900B5B75B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667CD31FBB065900B5B75B /* ItemCell.swift */; };
 		ED667CD61FBB065900B5B75B /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED667CD41FBB065900B5B75B /* ItemCell.xib */; };
 		ED667CDD1FBB0C9E00B5B75B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667CDC1FBB0C9E00B5B75B /* Item.swift */; };
+		ED729CEF1FBCA50E0057E6B9 /* StripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED729CEE1FBCA50E0057E6B9 /* StripViewController.swift */; };
+		EDA4E6991FBCB9790022B775 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA4E6981FBCB8F30022B775 /* Stripe.framework */; };
+		EDA4E69A1FBCBA2B0022B775 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA4E6981FBCB8F30022B775 /* Stripe.framework */; };
+		EDA4E69B1FBCBA2B0022B775 /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDA4E6981FBCB8F30022B775 /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDA4E69E1FBCC1660022B775 /* StripPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4E69D1FBCC1660022B775 /* StripPay.swift */; };
+		EDA4E6A01FBCC54A0022B775 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4E69F1FBCC54A0022B775 /* Extention.swift */; };
+		EDAB4FC21FBD669B00E21BB0 /* BrainTreePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */; };
+		EDAB4FC51FBD699700E21BB0 /* ApplePaySwagServer.py in Resources */ = {isa = PBXBuildFile; fileRef = EDAB4FC31FBD699700E21BB0 /* ApplePaySwagServer.py */; };
+		EDAB4FC61FBD699700E21BB0 /* BrainTree.py in Resources */ = {isa = PBXBuildFile; fileRef = EDAB4FC41FBD699700E21BB0 /* BrainTree.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,20 @@
 			remoteInfo = "e-shop";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDA4E69C1FBCBA2C0022B775 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDA4E69B1FBCBA2B0022B775 /* Stripe.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08369B7DB89D2EC5F3C41893 /* Pods-e-shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-shop.release.xcconfig"; path = "Pods/Target Support Files/Pods-e-shop/Pods-e-shop.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +103,13 @@
 		ED667CD31FBB065900B5B75B /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		ED667CD41FBB065900B5B75B /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		ED667CDC1FBB0C9E00B5B75B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		ED729CEE1FBCA50E0057E6B9 /* StripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripViewController.swift; sourceTree = "<group>"; };
+		EDA4E6981FBCB8F30022B775 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
+		EDA4E69D1FBCC1660022B775 /* StripPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripPay.swift; sourceTree = "<group>"; };
+		EDA4E69F1FBCC54A0022B775 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTreePay.swift; sourceTree = "<group>"; };
+		EDAB4FC31FBD699700E21BB0 /* ApplePaySwagServer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ApplePaySwagServer.py; sourceTree = SOURCE_ROOT; };
+		EDAB4FC41FBD699700E21BB0 /* BrainTree.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = BrainTree.py; sourceTree = SOURCE_ROOT; };
 		EF708E367E03BA7BC20496C9 /* Pods-e-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-shop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-shop/Pods-e-shop.debug.xcconfig"; sourceTree = "<group>"; };
 		FB6545479EDB20956C8E05CD /* Pods-e-shopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-shopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-shopTests/Pods-e-shopTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA4E6991FBCB9790022B775 /* Stripe.framework in Frameworks */,
 				D8BC38F60B16F36E23BB0B89 /* Pods_e_shop.framework in Frameworks */,
+				EDA4E69A1FBCBA2B0022B775 /* Stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +179,7 @@
 		ED667C971FBB055000B5B75B = {
 			isa = PBXGroup;
 			children = (
+				EDA4E6981FBCB8F30022B775 /* Stripe.framework */,
 				ED667CA21FBB055100B5B75B /* e-shop */,
 				ED667CB91FBB055100B5B75B /* e-shopTests */,
 				ED667CC41FBB055100B5B75B /* e-shopUITests */,
@@ -225,6 +258,7 @@
 				ED48BBE11FBB1CA300A74A7F /* DetailsVC.swift */,
 				ED667CA71FBB055100B5B75B /* CartVC.swift */,
 				ED48BBEA1FBB41F800A74A7F /* OrderVC.swift */,
+				ED729CEE1FBCA50E0057E6B9 /* StripViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,8 +266,11 @@
 		ED667CDA1FBB0A9300B5B75B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDAB4FC31FBD699700E21BB0 /* ApplePaySwagServer.py */,
+				EDAB4FC41FBD699700E21BB0 /* BrainTree.py */,
 				ED667CA31FBB055100B5B75B /* AppDelegate.swift */,
 				ED667CAC1FBB055100B5B75B /* Assets.xcassets */,
+				EDA4E69F1FBCC54A0022B775 /* Extention.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,6 +281,8 @@
 				ED667CDC1FBB0C9E00B5B75B /* Item.swift */,
 				ED48BBE31FBB29FB00A74A7F /* Cart.swift */,
 				ED48BBEF1FBB601100A74A7F /* ApplePay.swift */,
+				EDA4E69D1FBCC1660022B775 /* StripPay.swift */,
+				EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,6 +300,7 @@
 				ED667C9E1FBB055100B5B75B /* Resources */,
 				1F2E09F727F147F559021A91 /* [CP] Embed Pods Frameworks */,
 				6791B5B1453496986CDB04AD /* [CP] Copy Pods Resources */,
+				EDA4E69C1FBCBA2C0022B775 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,12 +409,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAB4FC51FBD699700E21BB0 /* ApplePaySwagServer.py in Resources */,
 				ED667CD61FBB065900B5B75B /* ItemCell.xib in Resources */,
 				ED48BBE81FBB2E0C00A74A7F /* CartCell.xib in Resources */,
 				ED667CB01FBB055100B5B75B /* LaunchScreen.storyboard in Resources */,
 				ED48BBED1FBB41F800A74A7F /* OrderVC.xib in Resources */,
 				ED667CAD1FBB055100B5B75B /* Assets.xcassets in Resources */,
 				ED667CAB1FBB055100B5B75B /* Main.storyboard in Resources */,
+				EDAB4FC61FBD699700E21BB0 /* BrainTree.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +462,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-e-shop/Pods-e-shop-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,11 +598,15 @@
 				ED48BBE21FBB1CA300A74A7F /* DetailsVC.swift in Sources */,
 				ED667CD51FBB065900B5B75B /* ItemCell.swift in Sources */,
 				ED48BBE71FBB2E0C00A74A7F /* CartCell.swift in Sources */,
+				EDA4E69E1FBCC1660022B775 /* StripPay.swift in Sources */,
 				ED48BBE41FBB29FB00A74A7F /* Cart.swift in Sources */,
 				ED667CA81FBB055100B5B75B /* CartVC.swift in Sources */,
+				EDA4E6A01FBCC54A0022B775 /* Extention.swift in Sources */,
 				ED667CA41FBB055100B5B75B /* AppDelegate.swift in Sources */,
 				ED667CA61FBB055100B5B75B /* ItemVC.swift in Sources */,
 				ED48BBF01FBB601100A74A7F /* ApplePay.swift in Sources */,
+				ED729CEF1FBCA50E0057E6B9 /* StripViewController.swift in Sources */,
+				EDAB4FC21FBD669B00E21BB0 /* BrainTreePay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +776,10 @@
 				CODE_SIGN_ENTITLEMENTS = "e-shop/e-shop.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5A2E3RMNX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -735,6 +787,7 @@
 				);
 				INFOPLIST_FILE = "e-shop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weza.e-shop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -750,6 +803,10 @@
 				CODE_SIGN_ENTITLEMENTS = "e-shop/e-shop.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5A2E3RMNX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -757,6 +814,7 @@
 				);
 				INFOPLIST_FILE = "e-shop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weza.e-shop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
