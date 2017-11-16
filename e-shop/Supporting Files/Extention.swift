@@ -16,4 +16,10 @@ extension UIViewController {
         alert.addAction(action)
         self.present(alert, animated: false, completion: nil)
     }
+    
+}
+
+func getRootViewController() -> UIViewController?{
+    let appdelegate = UIApplication.shared.delegate as! AppDelegate
+    return appdelegate.window?.rootViewController
 }

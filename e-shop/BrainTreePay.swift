@@ -19,6 +19,10 @@ class BraintreePay {
         
         URLSession.shared.dataTask(with: request){
             data, response, error in
+            guard error == nil else {
+                completion(nil)
+                return
+            }
             let token = String(data: data!, encoding: .utf8)
             DispatchQueue.main.async {
                 completion(token)
@@ -27,7 +31,7 @@ class BraintreePay {
         
     }
     
-    func makeFinalPayment(nonce : String,price : Double){
+    func makeFinalPayment(nonce : String,price : Double,completion:@escaping (Error?)->()){
         let paymentURL = URL(string: "http://0.0.0.0:5000/checkout")
         var request = URLRequest(url: paymentURL!)
         request.httpMethod = "POST"
@@ -40,7 +44,7 @@ class BraintreePay {
         
         
         URLSession.shared.dataTask(with: request) { (data, response, error) -> Void in
-            print(error ?? "")
+            completion(error)
             }.resume()
     }
 }

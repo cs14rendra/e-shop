@@ -4,10 +4,9 @@
 target 'e-shop' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-#pod 'Stripe/ApplePay'
-#pod 'Stripe'
 pod "SwiftSpinner"
-pod 'Braintree', '~> 3.9'
+pod 'Braintree'
+pod 'Braintree/Apple-Pay'
 
   # Pods for e-shop
 

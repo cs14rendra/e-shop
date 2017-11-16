@@ -19,8 +19,7 @@ class StripViewController: UIViewController{
     let brainTreeManager = BraintreePay()
     
     // BrainTree
-    let tokanizationKEY = "sandbox_ymxrpyvm_8vcr8hbq5yknmx7p"
-    var braintree: Braintree?
+    var braintree: BTAPIClient?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,9 +72,10 @@ class StripViewController: UIViewController{
                 self.Alert(title: "Token!", message: "Not found")
                 return
             }
-            self.braintree = Braintree(clientToken: clientToken)
-            let dropInViewController = self.braintree?.dropInViewController(with: self)
-            self.present(dropInViewController!, animated: true, completion: nil)
+            self.braintree = BTAPIClient(authorization: clientToken)
+            let dropInViewController = BTDropInViewController(apiClient: self.braintree!)
+            dropInViewController.delegate = self
+            self.present(dropInViewController, animated: true, completion: nil)
         }
     }
     
@@ -86,19 +86,16 @@ class StripViewController: UIViewController{
 
 extension StripViewController: BTDropInViewControllerDelegate{
    
-    func drop(_ viewController: BTDropInViewController!, didSucceedWith paymentMethod: BTPaymentMethod!) {
-        let paynonce = paymentMethod.nonce
-        guard let nonce = paynonce else {
-            self.Alert(title: "Nonce", message: "nonce is nil")
-            return
-        }
-        brainTreeManager.makeFinalPayment(nonce: nonce, price: 2.0)
+    func drop(_ viewController: BTDropInViewController, didSucceedWithTokenization paymentMethodNonce: BTPaymentMethodNonce) {
+        let paynonce = paymentMethodNonce.nonce
+        brainTreeManager.makeFinalPayment(nonce: paynonce, price: 888.0, completion: {
+            error in
+        })
         dismiss(animated: true, completion: nil)
     }
     
-    func drop(inViewControllerDidCancel viewController: BTDropInViewController!) {
+    func drop(inViewControllerDidCancel viewController: BTDropInViewController) {
         viewController.dismiss(animated: true, completion: nil)
     }
-    
-    
+
 }

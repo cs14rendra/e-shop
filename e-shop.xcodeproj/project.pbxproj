@@ -14,7 +14,7 @@
 		ED48BBE41FBB29FB00A74A7F /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48BBE31FBB29FB00A74A7F /* Cart.swift */; };
 		ED48BBE71FBB2E0C00A74A7F /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48BBE51FBB2E0C00A74A7F /* CartCell.swift */; };
 		ED48BBE81FBB2E0C00A74A7F /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED48BBE61FBB2E0C00A74A7F /* CartCell.xib */; };
-		ED48BBEC1FBB41F800A74A7F /* OrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48BBEA1FBB41F800A74A7F /* OrderVC.swift */; };
+		ED48BBEC1FBB41F800A74A7F /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48BBEA1FBB41F800A74A7F /* CheckoutVC.swift */; };
 		ED48BBED1FBB41F800A74A7F /* OrderVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED48BBEB1FBB41F800A74A7F /* OrderVC.xib */; };
 		ED48BBF01FBB601100A74A7F /* ApplePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED48BBEF1FBB601100A74A7F /* ApplePay.swift */; };
 		ED667CA41FBB055100B5B75B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED667CA31FBB055100B5B75B /* AppDelegate.swift */; };
@@ -37,6 +37,9 @@
 		EDAB4FC21FBD669B00E21BB0 /* BrainTreePay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */; };
 		EDAB4FC51FBD699700E21BB0 /* ApplePaySwagServer.py in Resources */ = {isa = PBXBuildFile; fileRef = EDAB4FC31FBD699700E21BB0 /* ApplePaySwagServer.py */; };
 		EDAB4FC61FBD699700E21BB0 /* BrainTree.py in Resources */ = {isa = PBXBuildFile; fileRef = EDAB4FC41FBD699700E21BB0 /* BrainTree.py */; };
+		EDAB4FC91FBDC2F000E21BB0 /* CreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB4FC81FBDC2F000E21BB0 /* CreditCardVC.swift */; };
+		EDAB4FD21FBDE36600E21BB0 /* paymentSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAB4FD01FBDE36600E21BB0 /* paymentSummaryVC.swift */; };
+		EDAB4FD31FBDE36600E21BB0 /* paymentSummary.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDAB4FD11FBDE36600E21BB0 /* paymentSummary.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +85,7 @@
 		ED48BBE31FBB29FB00A74A7F /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		ED48BBE51FBB2E0C00A74A7F /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		ED48BBE61FBB2E0C00A74A7F /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
-		ED48BBEA1FBB41F800A74A7F /* OrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderVC.swift; sourceTree = "<group>"; };
+		ED48BBEA1FBB41F800A74A7F /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		ED48BBEB1FBB41F800A74A7F /* OrderVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderVC.xib; sourceTree = "<group>"; };
 		ED48BBEE1FBB5D9800A74A7F /* e-shop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "e-shop.entitlements"; sourceTree = "<group>"; };
 		ED48BBEF1FBB601100A74A7F /* ApplePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePay.swift; sourceTree = "<group>"; };
@@ -110,6 +113,9 @@
 		EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTreePay.swift; sourceTree = "<group>"; };
 		EDAB4FC31FBD699700E21BB0 /* ApplePaySwagServer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ApplePaySwagServer.py; sourceTree = SOURCE_ROOT; };
 		EDAB4FC41FBD699700E21BB0 /* BrainTree.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = BrainTree.py; sourceTree = SOURCE_ROOT; };
+		EDAB4FC81FBDC2F000E21BB0 /* CreditCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardVC.swift; sourceTree = "<group>"; };
+		EDAB4FD01FBDE36600E21BB0 /* paymentSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSummaryVC.swift; sourceTree = "<group>"; };
+		EDAB4FD11FBDE36600E21BB0 /* paymentSummary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paymentSummary.xib; sourceTree = "<group>"; };
 		EF708E367E03BA7BC20496C9 /* Pods-e-shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-shop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-shop/Pods-e-shop.debug.xcconfig"; sourceTree = "<group>"; };
 		FB6545479EDB20956C8E05CD /* Pods-e-shopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-e-shopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-e-shopTests/Pods-e-shopTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +250,7 @@
 			children = (
 				ED667CD71FBB071C00B5B75B /* ItemCell */,
 				ED667CA91FBB055100B5B75B /* Main.storyboard */,
+				EDAB4FD11FBDE36600E21BB0 /* paymentSummary.xib */,
 				ED48BBEB1FBB41F800A74A7F /* OrderVC.xib */,
 				ED667CAE1FBB055100B5B75B /* LaunchScreen.storyboard */,
 				ED48BBE91FBB2E1200A74A7F /* CartCell */,
@@ -257,8 +264,10 @@
 				ED667CA51FBB055100B5B75B /* ItemVC.swift */,
 				ED48BBE11FBB1CA300A74A7F /* DetailsVC.swift */,
 				ED667CA71FBB055100B5B75B /* CartVC.swift */,
-				ED48BBEA1FBB41F800A74A7F /* OrderVC.swift */,
+				ED48BBEA1FBB41F800A74A7F /* CheckoutVC.swift */,
+				EDAB4FC81FBDC2F000E21BB0 /* CreditCardVC.swift */,
 				ED729CEE1FBCA50E0057E6B9 /* StripViewController.swift */,
+				EDAB4FD01FBDE36600E21BB0 /* paymentSummaryVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,10 +290,18 @@
 				ED667CDC1FBB0C9E00B5B75B /* Item.swift */,
 				ED48BBE31FBB29FB00A74A7F /* Cart.swift */,
 				ED48BBEF1FBB601100A74A7F /* ApplePay.swift */,
+				EDAB4FC71FBDBFFC00E21BB0 /* Payment gateway */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EDAB4FC71FBDBFFC00E21BB0 /* Payment gateway */ = {
+			isa = PBXGroup;
+			children = (
 				EDA4E69D1FBCC1660022B775 /* StripPay.swift */,
 				EDAB4FC11FBD669B00E21BB0 /* BrainTreePay.swift */,
 			);
-			name = Model;
+			name = "Payment gateway";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +432,7 @@
 				ED667CB01FBB055100B5B75B /* LaunchScreen.storyboard in Resources */,
 				ED48BBED1FBB41F800A74A7F /* OrderVC.xib in Resources */,
 				ED667CAD1FBB055100B5B75B /* Assets.xcassets in Resources */,
+				EDAB4FD31FBDE36600E21BB0 /* paymentSummary.xib in Resources */,
 				ED667CAB1FBB055100B5B75B /* Main.storyboard in Resources */,
 				EDAB4FC61FBD699700E21BB0 /* BrainTree.py in Resources */,
 			);
@@ -594,15 +612,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED667CDD1FBB0C9E00B5B75B /* Item.swift in Sources */,
-				ED48BBEC1FBB41F800A74A7F /* OrderVC.swift in Sources */,
+				ED48BBEC1FBB41F800A74A7F /* CheckoutVC.swift in Sources */,
 				ED48BBE21FBB1CA300A74A7F /* DetailsVC.swift in Sources */,
 				ED667CD51FBB065900B5B75B /* ItemCell.swift in Sources */,
 				ED48BBE71FBB2E0C00A74A7F /* CartCell.swift in Sources */,
 				EDA4E69E1FBCC1660022B775 /* StripPay.swift in Sources */,
 				ED48BBE41FBB29FB00A74A7F /* Cart.swift in Sources */,
 				ED667CA81FBB055100B5B75B /* CartVC.swift in Sources */,
+				EDAB4FC91FBDC2F000E21BB0 /* CreditCardVC.swift in Sources */,
 				EDA4E6A01FBCC54A0022B775 /* Extention.swift in Sources */,
 				ED667CA41FBB055100B5B75B /* AppDelegate.swift in Sources */,
+				EDAB4FD21FBDE36600E21BB0 /* paymentSummaryVC.swift in Sources */,
 				ED667CA61FBB055100B5B75B /* ItemVC.swift in Sources */,
 				ED48BBF01FBB601100A74A7F /* ApplePay.swift in Sources */,
 				ED729CEF1FBCA50E0057E6B9 /* StripViewController.swift in Sources */,
@@ -786,6 +806,7 @@
 					STRIPE_ENABLE_APPLEPAY,
 				);
 				INFOPLIST_FILE = "e-shop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weza.e-shop";
@@ -813,6 +834,7 @@
 					STRIPE_ENABLE_APPLEPAY,
 				);
 				INFOPLIST_FILE = "e-shop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.weza.e-shop";

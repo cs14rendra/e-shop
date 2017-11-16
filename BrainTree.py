@@ -23,24 +23,27 @@ def create_purchase():
         json  = request.get_json(force=True)
         nonce = json["payment_method_nonce"]
         ammount = json["amount"]
-        result = braintree.Transaction.sale({
+        try:
+            result = braintree.Transaction.sale({
                                     "amount": ammount,
                                     "payment_method_nonce": nonce,
                                     "options": {
                                             "submit_for_settlement": True
                                                 }
                                     })
-        if result.is_success:
-            print("success!: " + result.transaction.id)
-        elif result.transaction:
-            print("Error processing transaction:")
-            print("  code: " + result.transaction.processor_response_code)
-            print("  text: " + result.transaction.processor_response_text)
-        else:
-            for error in result.errors.deep_errors:
-                print("attribute: " + error.attribute)
-                print("  code: " + error.code)
-                print("  message: " + error.message)
+        except result.errors, e:
+                pass
+#        if result.is_success:
+#            print("success!: " + result.transaction.id)
+#        elif result.transaction:
+#            print("Error processing transaction:")
+#            print("  code: " + result.transaction.processor_response_code)
+#            print("  text: " + result.transaction.processor_response_text)
+#        else:
+#            for error in result.errors.deep_errors:
+#                print("attribute: " + error.attribute)
+#                print("  code: " + error.code)
+#                print("  message: " + error.message)
         return "success"
 
 #1

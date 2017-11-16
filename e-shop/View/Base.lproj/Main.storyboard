@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xv3-Cs-TsE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="514"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="Rfc-Gf-bgd"/>
@@ -120,10 +120,10 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddw-xE-yoe">
-                                <rect key="frame" x="0.0" y="514" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="504" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.0078431377190000002" green="0.53333336109999996" blue="0.81960785390000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="nmN-Fp-15p"/>
+                                    <constraint firstAttribute="height" constant="50" id="nmN-Fp-15p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="Place order">
