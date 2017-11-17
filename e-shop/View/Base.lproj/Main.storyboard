@@ -121,13 +121,16 @@
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddw-xE-yoe">
                                 <rect key="frame" x="0.0" y="504" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.0078431377190000002" green="0.53333336109999996" blue="0.81960785390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.53557987514947447" blue="0.75718658112491344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nmN-Fp-15p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Place order">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="placeOrder:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ojp-fb-spt"/>
@@ -221,7 +224,7 @@
         <scene sceneID="JfN-NH-mig">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vdZ-Ak-kwf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="First" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="pbk-b2-5jr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -241,7 +244,7 @@
         <scene sceneID="99I-3c-yEJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Jj-l9-HLN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Second" image="cart" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="hGm-4O-umR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -278,7 +281,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cart" width="29" height="29"/>
+        <image name="home" width="24" height="24"/>
     </resources>
 </document>

@@ -30,6 +30,8 @@ class CartCell: UITableViewCell {
             let effectivePrice = price * Double(count!)
             self.price.text     =  "\(effectivePrice)"
         }
+        
+        NotificationCenter.default.post(name: NSNotification.Name("step"), object: nil, userInfo: nil)
     }
     
     func updateCell(){

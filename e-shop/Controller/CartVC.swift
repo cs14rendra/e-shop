@@ -17,11 +17,29 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.register(UINib(nibName: "CartCell", bundle:nil), forCellReuseIdentifier: "CartCell")
+        NotificationCenter.default.addObserver(self, selector: #selector(SecondViewController.stepperClicked), name: NSNotification.Name("step"), object: nil)
+    }
+    
+    @objc func stepperClicked(){
+        var totalPrice = 0.0
+        for item in cartItems {
+            let price = item.item.price * Double(item.count)
+            totalPrice = totalPrice + price
+        }
+        if totalPrice > 0.0 {
+           self.placeOrder.isEnabled = true
+        }else{
+            self.placeOrder.isEnabled = false
+        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tableView.reloadData()
+        self.placeOrder.isEnabled = false
+        if cartItems.count > 0 {
+            self.placeOrder.isEnabled = true
+        }
         
     }
 

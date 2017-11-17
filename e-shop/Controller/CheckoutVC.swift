@@ -78,7 +78,7 @@ class OrderVC: UIViewController {
     }
     
     func chooseBetweenStripandBrainTreeforApplePay(){
-        let alert = UIAlertController(title: "payment Option", message: "choose payment gateway", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "payment Option", message: "choose payment gateway (for Dev)", preferredStyle: .actionSheet)
         let strip = UIAlertAction(title: "Strip", style: UIAlertActionStyle.default) { (action) in
             self.index = 0
             self.initialiseApplePayController()
