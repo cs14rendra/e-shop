@@ -1,7 +1,7 @@
 # e-shop
 e-shop allow poeple to buy things online. Customer can browse throgh all the item. they can add it to cart. later they have multiple options for payments.
 
-#Payment Gateway
+# Payment Gateway
 Following payment gateway used:
 1. Brantree
 2. Strip
