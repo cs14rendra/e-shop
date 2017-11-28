@@ -1,6 +1,11 @@
 # e-shop
 e-shop allow poeple to buy things online. Customer can browse throgh all the item. they can add it to cart. later they have multiple options for payments.
 
+#Payment Gateway
+Following payment gateway used:
+1. Brantree
+2. Strip
+3. Paytm
 ## Installation
 
 ### Server Setup
@@ -28,6 +33,8 @@ A detailed information can be found on their websites regarding set-up of server
 - [x] Credit Card Payments
 - [x] Apple Pay Payments using Braintree or Strip
 - [x] Paypal Payments
+- [x] Paytm Client Side Setup
+- [x] Paytm Server Setup
 - [ ] Dynamic Product using some Backed like Firebase or Amazon
 
 
