@@ -1,7 +1,4 @@
 # e-shop
-A e-commerce App to buy things online
-
-
 e-shop allow poeple to buy things online. Customer can browse throgh all the item. they can add it to cart. later they have multiple options for payments.
 
 ## Installation
